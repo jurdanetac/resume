@@ -1,0 +1,225 @@
+%-------------------------
+% Resume in Latex
+% Author : Juan Urdaneta
+% Based off of: https://github.com/sb2nov/resume and https://github.com/jakegut/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Juan Urdaneta} \\ \vspace{1pt}
+    {Maracaibo, Venezuela} $|$ \href{mailto:jurdanetac10@gmail.com}{\underline{jurdanetac10@gmail.com}} $|$  \href{tel:+584246052565}{\underline{+58 (424) 605 - 2565}}\\
+    \href{https://linkedin.com/in/juan-d-urdaneta-c}{\underline{linkedin.com/in/juan-d-urdaneta-c}} $|$
+    \href{https://github.com/jurdanetac}{\underline{github.com/jurdanetac}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+Informatics Engineer with 1+ years of experience building end-to-end web applications using modern stacks (MERN, Django, TypeScript). Dedicated to engineering high-quality, automated solutions that eliminate manual bottlenecks. Professional bilingual fluency (English/Spanish), currently expanding into native iOS development.
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Dr. Rafael Belloso Chacín University (URBE)}{September 2021 -- July 2025}
+      {BSc. Informatics Engineering (US Equivalent: Computer Science)}{Maracaibo, Zulia}
+      \resumeItemListStart
+        \resumeItem{Cumulative GPA: 3.61 (Honored Cum Laude)}
+        \resumeItem{Placed third in the 2023 problem solving hackathon}
+        \resumeItem{Capstone Project: Web platform for the distribution and authentication of digital documents based on blockchain technology}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Open Source Software University (OSSU)}{April 2026 -- Present}
+      {Mathematics}{Self-paced}
+
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Virtual Assistant and Process Automator}{October 2025 -- Present}
+      {Top of the Line VA}{San Jose, CA}
+      \resumeItemListStart
+        \resumeItem{Carried out continuous lead management of realtors in the San Francisco Bay Area with GoHighLevel CRM}
+        \resumeItem{Created and maintained workflow automations for the company’s GoHighLevel CRM}
+        \resumeItem{Performed market technical analysis of properties to identify potential fix and flip opportunities}
+        \resumeItem{Cleaned, consolidated and stored thousands of records from MLS datasets using Microsoft Excel}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Software Engineer}{November 2024 -- October 2025}
+      {Agencia de Viajes y Turismo Javitour}{Maracaibo, Zulia}
+      \resumeItemListStart
+        \resumeItem{Engineered a multi-role payment validator web app with Flask and achieved daily income traceability for 20 users}
+        \resumeItem{Automated 400+ daily ticket issue workflows, reducing manual intervention by 99\%, shifting focus to outliers}
+        \resumeItem{Engineered a centralized Django dashboard to unify internal tools and streamline cross-interface accessibility}
+        \resumeItem{Delivered hybrid technical support (on-site/remote) for hardware deployment and software troubleshooting}
+        \resumeItem{Facilitated technical consultations with international software providers to align company's project requirements}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Self-hosted Server} $|$ \emph{WSL, SMB, Static IP Addressing, RDP and SSH Config}}{March 2026 -- Present}
+          \resumeItemListStart
+            \resumeItem{Deployed and configured multipurpose Windows 11 Enterprise IoT in a physical environment}
+            \resumeItem{Implemented secure RDP endpoint, SSH access, and static IP assignments for reliable remote administration}
+            \resumeItem{Provisioned SMB file sharing to manage decentralized data access across the local network}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\href{https://github.com/jurdanetac/mls}{\underline{\textbf{MLS}}} $|$ \emph{Vite, Typescript, React, Django Ninja, Git}}{February 2026 -- Present}
+          \resumeItemListStart
+            \resumeItem{Engineered a streamlined React UI to input complex property data and instantly export formatted listings}
+            \resumeItem{Reduced document preparation time by over 80\%, increasing focus on technical property analysis}
+            \resumeItem{Implemented a persistent storage solution using SQLite to archive and retrieve generated templates}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\href{https://github.com/jurdanetac/fullstackopen}{\underline{\textbf{Full Stack Open}}} $|$ \emph{React, Node.js, Express.js, RESTful APIs}}{December 2023 -- May 2024}
+          \resumeItemListStart
+            \resumeItem{Developed and deployed end-to-end MERN apps, implementing RESTful APIs and complex state management}
+            \resumeItem{Orchestrated app environments using Docker and Docker Compose, streamlining development and deployments}
+            \resumeItem{Architected secure user authentication systems using JWT and BCrypt with Express.js}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: TypeScript, HTML/CSS/JS, Python, SQL (Postgres, MariaDB, SQLite), Swift/SwiftUI} \\
+     \textbf{Frameworks}{: React, Node.js, Express.js, Django, Flask, WordPress} \\
+     \textbf{Developer Tools}{: Linux, Git, Docker, Github Actions} \\
+     %\textbf{Libraries}{: pandas, NumPy, Matplotlib}
+     \textbf{Languages}{: English (Full Professional Proficiency), Spanish (Native), French (Basic Proficiency)}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
